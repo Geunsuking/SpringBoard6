@@ -50,7 +50,7 @@ public class AuthInterceptor implements HandlerInterceptor {
 			String     fmt    =  "/Users/LoginForm?uri={0}&menu_id={1}&nowpage={2}";
 			String     loc    =  MessageFormat.format(fmt, 
 					uri, menu_id, nowpage );
-			response.sendRedirect( loc );    //  GET 방식요청
+			response.sendRedirect( loc );   // GEt 방식요청
 			return   false;
 		}
 		

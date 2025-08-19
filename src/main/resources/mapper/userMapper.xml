@@ -38,6 +38,7 @@
   </select>
   
   <select id="login">
+  
      SELECT      USERID,  
                  PASSWD,  
                  USERNAME,
@@ -46,9 +47,9 @@
                  INDATE
       FROM       TUSER  
      WHERE       USERID =  #{  userid  }  
-      AND        PASSWD =  #{  passwd  }
-    
-    </select>
+      AND        PASSWD =  #{  passwd  }  
+  
+  </select>
   
   <insert  id="insertUser">
     INSERT INTO TUSER (
